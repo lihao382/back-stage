@@ -4,11 +4,11 @@ export default {
     //登录接口
     login(name,pass){
         return request({
-            url : "/user/login",
+            url : "/list/login",
             method : "post",
             data : {
-                username : name,
-                userpass : pass
+               name,
+               pass
             }
         })
     },
